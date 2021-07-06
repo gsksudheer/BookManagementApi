@@ -1,0 +1,73 @@
+bOOK MANAGEMENT API'S
+
+>>BOOKS
+    1.ISBN,
+    2.TITLE,
+    3.LANGUAGE, 
+    4.PUBLISH DATE, 
+    5.NUMBER OF PAGES, 
+    6.CATEGORY[], 
+    7.AUTHORS[]
+
+>>AUTHORS
+    1.ID
+    2.NAME
+    3.BOOKS[]
+
+>>PUBLICATIONS
+    1.ID
+    2.NAME
+    3.BOOKS[]
+
+>>>>>>>>>>API'S<<<<<<<<<<<<<<<
+_________________________________________________________________________________________________________
+>>BOOKS
+    METHOD: get
+        to get all the BOOKS 
+        to get a specific based on the ISBN
+        to get a list of books based on the CATEGORY[]
+        to get a list of books based on the AUTHORS[]   >>>pending.....
+   
+    METHOD: post --> add
+        New Book
+   
+    METHOD: put -->update
+        update book details
+        update or add new author    >>>>>>>pending
+
+    METHOD: delete
+        delete a book
+        delete an author from a book
+_________________________________________________________________________________________________________
+>>AUTHORS
+    METHOD: get
+        To get all the AUTHORS
+        To get the specific author
+        to get a list of author based on a book
+   
+    METHOD: post
+        New Author
+    METHOD: put 
+        update author name using id >>>>>pending
+
+    METHOD: delete
+        delete Author
+_________________________________________________________________________________________________________
+>>PUBLICATIONS
+    METHOD: GET 
+        To get all the PUBLICATIONS
+        To get a specific AUTHOR 
+        To get a list of specific PUBLICATIONS based on the book
+   
+    METHOD: post
+        add New PUBLICATIONS
+
+    METHOD: put >>>>>>pending
+        update PUBLICATIONs name using id
+        update or add new book to a PUBLICATIONS
+
+    METHOD: delete
+        delete a PUBLICATIONS
+        delete a book from PUBLICATIONS
+_________________________________________________________________________________________________________
+Add mongoose validation to all models
