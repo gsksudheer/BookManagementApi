@@ -41,4 +41,4 @@ booky.use("/author", Authors);
 booky.use("/publication", Publications);
 
 
-booky.listen(3000, () => console.log("servier runing 🚀 🚀 🚀 🚀 🚀"));
+booky.listen(3000, () => console.log("servier runing "));
